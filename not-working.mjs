@@ -5,6 +5,7 @@ server.listen();
 
 const url = "https://www.google.com/";
 
-await fetch(new URL(url));
+const response = await fetch(new URL(url));
+console.log(response.status);
 
 server.close();
